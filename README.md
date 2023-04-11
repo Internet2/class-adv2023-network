@@ -16,4 +16,4 @@ Terraform configuration code on Github
 Network Diagram describing where the connectivity terminates on each side of the tunnel(s)
 
 ### Conceptual and similar projects:
-[Multi-Cloud HA VPN Connection between AWS and GCP] (https://levelup.gitconnected.com/multi-cloud-ha-vpn-connection-between-aws-and-gcp-d66338c8095f) | by Divya Kurothe | Feb, 2023 | Level Up Coding: *This is a High-Available connection, so it might be more complicated case.*
+Multi-Cloud HA VPN [Connection between AWS and GCP](https://levelup.gitconnected.com/multi-cloud-ha-vpn-connection-between-aws-and-gcp-d66338c8095f) | by Divya Kurothe | Feb, 2023 | Level Up Coding: *This is a High-Available connection, so it might be more complicated case.*

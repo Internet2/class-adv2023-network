@@ -1,0 +1,57 @@
+{
+  "MaxCount": 1,
+  "MinCount": 1,
+  "ImageId": "ami-06e46074ae430fba6",
+  "InstanceType": "t2.micro",
+  "EbsOptimized": false,
+  "NetworkInterfaces": [
+    {
+      "SubnetId": "subnet-0e8166186e5fb2760",
+      "AssociatePublicIpAddress": true,
+      "DeviceIndex": 0,
+      "Groups": [
+        "<groupId of the new security group created below>"
+      ]
+    }
+  ],
+  "TagSpecifications": [
+    {
+      "ResourceType": "instance",
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "class-awsvm1"
+        }
+      ]
+    }
+  ],
+  "PrivateDnsNameOptions": {
+    "HostnameType": "ip-name",
+    "EnableResourceNameDnsARecord": false,
+    "EnableResourceNameDnsAAAARecord": false
+  }
+}
+
+
+{
+  "GroupName": "class-awsvm1",
+  "Description": "launch-wizard-1 created 2023-04-11T14:37:42.959Z",
+  "VpcId": "vpc-07be0694d956de872"
+}
+
+
+{
+  "groupId": "<groupId of the security group created above>",
+  "ipPermissions": [
+    {
+      "ipProtocol": "icmp",
+      "fromPort": -1,
+      "toPort": -1,
+      "ipRanges": [
+        {
+          "cidrIp": "0.0.0.0/0"
+        }
+      ]
+    }
+  ]
+}

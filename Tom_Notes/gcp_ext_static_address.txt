@@ -1,0 +1,3 @@
+gcloud compute addresses create class-gcp-static1 --project=class-adv2023-tkautz --description=Static\ IP\ for\ class\ project --region=us-west1
+
+gcloud compute instances add-access-config class-gcpvm1 --project=class-adv2023-tkautz --zone=us-west1-b --address=IP_OF_THE_NEWLY_CREATED_STATIC_ADDRESS4

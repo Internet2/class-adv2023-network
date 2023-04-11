@@ -1,0 +1,5 @@
+gcloud compute networks create class-gcpvpc2 --project=class-adv2023-tkautz --description=Subnet\ 2 --subnet-mode=custom --mtu=1460 --bgp-routing-mode=regional
+
+gcloud compute networks subnets create class-gcpsub2 --project=class-adv2023-tkautz --range=10.200.1.0/24 --stack-type=IPV4_ONLY --network=class-gcpvpc2 --region=us-west1
+
+gcloud compute firewall-rules create class-gcpvpc2-allow-icmp --project=class-adv2023-tkautz --network=projects/class-adv2023-tkautz/global/networks/class-gcpvpc2 --description=Allows\ ICMP\ connections\ from\ any\ source\ to\ any\ instance\ on\ the\ network. --direction=INGRESS --priority=65534 --source-ranges=0.0.0.0/0 --action=ALLOW --rules=icmp

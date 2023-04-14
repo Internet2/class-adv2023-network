@@ -31,7 +31,7 @@ def load_env(
         for option in config.options(section):
             config_dict[section][option] = config.get(section, option)
     
-    print(config_dict)
+    # Convert dictionary to JSON
     os.environ["backend_dict"] = json.dumps(config_dict["Backend"])
 
 def terraform_init(

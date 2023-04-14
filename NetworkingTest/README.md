@@ -17,6 +17,6 @@
 Hub and spoke example of networking between multiple cloud providors.  
 Here is an over view of one what one of the spokes would look like:
   
-![alt text](../.image/spoke_diagram.jpg?raw=true "Spoke Diagram")
+![alt text](./../.image/spoke_diagram.jpg?raw=true "Spoke Diagram")
 
 explination and stuff..
